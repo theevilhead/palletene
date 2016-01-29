@@ -5,4 +5,5 @@ One file pallete manager
 * Double click to delete the color
 
 Upcomings
-* Colonization 
+* Colonization coming soon.
+* You can create your fav/projects/etc colony
