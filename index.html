@@ -325,9 +325,12 @@ handle_del_color : function( e ){
 			new_color_stack.push(colors[i]);
 		}
 	}
+	console.log(localStorage.pallete_main);
+	localStorage.pallete_main = null;
 	localStorage.pallete_main = JSON.stringify(new_color_stack);
 	
-	pltts.update_page();
+	// pltts.update_page();
+	window.location="";
 
 },
 
@@ -349,7 +352,9 @@ handle_reset : function (){
 	if(confirm("This will result in erasing all you palletes and colors added so far.Do you wanna proceed ? ")){
 		localStorage.clear();
 	}
-		pltts.update_page();
+		// pltts.update_page();
+	window.location="";
+		
 },
 
 new_modal : function( content ){
