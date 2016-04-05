@@ -276,7 +276,8 @@ handle_new_color : function( f ){
 			localStorage.pallete_main = this.pallete_main;
 			this.pallete_main.push(color);
 			localStorage.pallete_main = JSON.stringify(this.pallete_main);
-			pltts.update_page();
+			// pltts.update_page();
+			window.location = "";
 
 		}
 
@@ -327,7 +328,9 @@ handle_del_color : function( e ){
 	}
 	localStorage.pallete_main = JSON.stringify(new_color_stack);
 	
-	pltts.update_page();
+	// pltts.update_page();
+			window.location = "";
+
 
 },
 
@@ -349,7 +352,9 @@ handle_reset : function (){
 	if(confirm("This will result in erasing all you palletes and colors added so far.Do you wanna proceed ? ")){
 		localStorage.clear();
 	}
-		pltts.update_page();
+		// pltts.update_page();
+			window.location = "";
+		
 },
 
 new_modal : function( content ){
