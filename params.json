@@ -1,7 +1,7 @@
 {
   "name": "Palletene",
   "tagline": "One file pallete manager",
-  "body": "#palletene\r\n![Palletene](https://www.dropbox.com/s/77hajc1b1f8na16/palletene.png?dl=0)\r\nOne file pallete manager\r\n* No worries about the storage it is built on the HTML5's localstorage.\r\n* One click to copy the hex code and other formats coming soon\r\n* Double click to delete the color\r\n\r\nUpcomings\r\n* Colonization coming soon.\r\n* You can create your fav/projects/etc colony\r\n",
+  "body": "#palletene\r\n![ex_pallete](https://www.dropbox.com/s/77hajc1b1f8na16/palletene.png?dl=0)\r\n<p align=\"center\">\r\n  <img src=\"https://www.dropbox.com/s/77hajc1b1f8na16/palletene.png\" width=\"350\"/>\r\n\r\n</p>\r\nOne file pallete manager\r\n* No worries about the storage it is built on the HTML5's localstorage.\r\n* One click to copy the hex code and other formats coming soon\r\n* Double click to delete the color\r\n\r\nUpcomings\r\n* Colonization coming soon.\r\n* You can create your fav/projects/etc colony\r\n",
   "google": "",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
