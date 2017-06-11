@@ -17,8 +17,6 @@ Description : A single html file to manage a pallette built on the classic html 
 	##	
 	## alletene - your handy pallete manager
 
-
-
 -->
 <!doctype html>
 <html class="no-js" lang="en">
@@ -27,38 +25,43 @@ Description : A single html file to manage a pallette built on the classic html 
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="A signle file pallete manager to color lovers,pallete manager">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
 	<title> Palletene </title>
 	<style type="text/css">
-	html,body{
-		background: #f3f8f2;
-		display: block;
-		font-family: "segoe ui";
-		font-size: 17px;
-		padding: 0;
-		margin:0;
-	}
-	*{
-		box-sizing:border-box;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-	}
-		header{
+		html,body{
 			background: #fff;
 			display: block;
+		    font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 17px;
+			padding: 0;
+			margin:0;
+		}
+		*{
+			box-sizing:border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		header{
+			background: #fff;
+			display: inline-block;
 			width: 100%;
+			clear: both;
+			float: none;
 		}
 		.header-wrap{
-			margin-right: 5%;
-			margin-left: 5%;
-			width: 90%;
-			display: inline-block;
+			max-width: 1010px;
+			display: block;
+			width: 100%;
+			margin: 0 auto;
 		}
 		.mini-header{
 			background: rgba(0,0,0,.1);
-			color: #888;
-			padding: 5px;
-			font-size: smaller;
-			text-align: center;
+			color: #333;
+			padding: 10px 5px;
+			font-size: 16px;
+			font-weight: bolder;
+			text-align: center;clear: both;
+			float: none;
 		}
 		.logo{
 			font-size: 30px;
@@ -78,19 +81,21 @@ Description : A single html file to manage a pallette built on the classic html 
 		.container{
 			display: block;
 			width: 100%;
-			margin: 0 auto;
+			margin: 10px auto;
 		}
 		.container-wrap{
 			display: block;
-			margin-right: 5%;
-			margin-left: 5%;
-			width: 90%;
+			max-width: 1010px;
+			margin: 0 auto;
 		}
 		input{
 			display: inline-block;
 			border: 1px solid #d9d9d9;
+			border-radius: 3px;
+			text-align: center;
 			padding: 10px 5px;
-			font-family: segoe ui;
+			font-weight: 800;
+		    font-family: 'Open Sans Condensed', sans-serif;
 			letter-spacing: 1px;
 			vertical-align: middle;
 			font-size: 100%;
@@ -127,6 +132,9 @@ Description : A single html file to manage a pallette built on the classic html 
 		#reset:hover{
 			right: 0;
 		}
+		#pallete_container{
+			margin-top: 20px;
+		}
 		.modal{
 			position: absolute;
 			top: 10%;
@@ -149,7 +157,7 @@ Description : A single html file to manage a pallette built on the classic html 
 		/* plc is classname for the whole colors in main pallete container */
 		a.plc{
 			display: inline-block;
-			width: calc(14.28575% - 10px);
+			width: calc(10% - 10px);
 			margin: 5px;
 			padding: 20px 0;
 			border: 1px solid rgba(0,0,0,.1);
@@ -160,9 +168,13 @@ Description : A single html file to manage a pallette built on the classic html 
 			text-decoration: none;
 			color: #fff;
 			font-size: 100%;
+			transition: .22s all linear;
 		}
 		a.plc:focus{
 			box-shadow: 0 0 10px 1px #999
+		}
+		a.plc:hover{
+			box-shadow:  3px 3px 1px .1px rgba(0,0,0,.3);
 		}
 
 		@media  screen and (max-width: 640px){
@@ -198,7 +210,7 @@ Description : A single html file to manage a pallette built on the classic html 
 	</div>
 </div>
 <div class="mini-header">
-	&lt;&gt;Click to copy the color code &gt;&lt; Double click to delete a color
+	&#9632; Click to copy the color code &#9632;  Double click to delete a color &#9632; 
 </div>
 </header>
 <div id="container">
