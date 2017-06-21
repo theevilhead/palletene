@@ -31,6 +31,7 @@ Description : A single html file to manage a pallette built on the classic html 
 		html,body{
 			background: #fff;
 			display: block;
+			font-family: 'sans';
 		    font-family: 'Open Sans Condensed', sans-serif;
 			font-size: 17px;
 			padding: 0;
@@ -85,8 +86,9 @@ Description : A single html file to manage a pallette built on the classic html 
 		}
 		.container-wrap{
 			display: block;
-			max-width: 1010px;
+			max-width: 1150px;
 			margin: 0 auto;
+			text-align: center;
 		}
 		input{
 			display: inline-block;
@@ -157,24 +159,44 @@ Description : A single html file to manage a pallette built on the classic html 
 		/* plc is classname for the whole colors in main pallete container */
 		a.plc{
 			display: inline-block;
-			width: calc(10% - 10px);
-			margin: 5px;
+			min-width: 150px;
+			width: calc(13% - 30px);
+			margin: 10px 15px 50px 15px;
 			padding: 20px 0;
-			border: 1px solid rgba(0,0,0,.1);
-			border-radius: 3px;
+			box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+			border-radius: 10px 10px 0 0;
 			font-weight: 600;
 			letter-spacing: 1px;
 			text-align: center;
 			text-decoration: none;
 			color: #fff;
+			height: 140px;
 			font-size: 100%;
+			position: relative;
 			transition: .22s all linear;
 		}
 		a.plc:focus{
 			box-shadow: 0 0 10px 1px #999
 		}
 		a.plc:hover{
-			box-shadow:  3px 3px 1px .1px rgba(0,0,0,.3);
+			box-shadow:  0 3px 10px .1px rgba(0,0,0,.3);
+			transform : translateY(-5px);
+			transition-duration: .35s;
+			transition-property: all;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			color: #333;
+		}
+		a.plc > span{
+			background-color: #fff;
+			height: 50px;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			color: rgb(146, 145, 151);
+			width: 100%;
+			padding: 10px 0;
+			font-weight: 400;
+			font-family: 'Sans'
 		}
 
 		@media  screen and (max-width: 640px){
@@ -195,6 +217,7 @@ Description : A single html file to manage a pallette built on the classic html 
 		}
 	</style>
 </head>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=594aa807b34d2c00112ab26a&product=inline-share-buttons"></script>
 <body>
 	
 <header>
@@ -212,6 +235,7 @@ Description : A single html file to manage a pallette built on the classic html 
 <div class="mini-header">
 	&#9632; Click to copy the color code &#9632;  Double click to delete a color &#9632; 
 </div>
+<div class="sharethis-inline-share-buttons"></div>
 </header>
 <div id="container">
 	<div class="container-wrap">
@@ -315,7 +339,7 @@ update_page : function(){
 					cEle.href = '#'+colors[i];
 					cEle.id = '#'+colors[i];
 					cEle.className = 'plc';
-					cEle.textContent = '#'+colors[i];
+					cEle.innerHTML = '<span>#'+colors[i]+'</span>';
 					cEle.style.backgroundColor = '#'+colors[i];
 					cParEle.appendChild(cEle);
 
