@@ -7,6 +7,7 @@
 ### Updates
     New and Clean UI
 ![ex_pallete](https://github.com/girishpatil/palletene/blob/master/palletene_v2_1.png)
+### Updates #1
 ![ex_pallete](https://github.com/girishpatil/palletene/blob/master/palletene_v2_2.png)
     Old UI
 ![ex_pallete](https://github.com/girishpatil/palletene/blob/master/palletene_v1.png)
