@@ -57,7 +57,7 @@ Description : A single html file to manage a pallette built on the classic html 
 		}
 		.mini-header{
 			background: rgba(0,0,0,.1);
-			color: #333;
+			color: #787575;
 			padding: 10px 5px;
 			font-size: 16px;
 			font-weight: bolder;
@@ -67,13 +67,10 @@ Description : A single html file to manage a pallette built on the classic html 
 		.logo{
 			font-size: 30px;
 			font-weight: 400;
-			color: rgba(0,0,0,.3);
+			color: rgba(0,0,0,.7);
 			text-transform: uppercase;
 			float: left;
 			margin: 12px 0;
-		}
-		.logo:hover{
-			color: rgba(0,0,0,.7);
 		}
 		.new_color{
 			float: right;
@@ -117,14 +114,18 @@ Description : A single html file to manage a pallette built on the classic html 
 			display: none;
 		}
 		#reset{
+			font-family: 'Open Sans Condensed', sans-serif;
 			position: fixed;
-			right : -33px;
+			right : -40px;
 			bottom:0;
 			letter-spacing: 1px;
-			margin:0;
-			padding: 5px;
+			margin-bottom:20px;
+			font-size: 15px;
+			padding: 7px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
 			border: none;
-			background: #ed5565;
+			background: #ee5050;
 			color:#fff;
 			text-transform: uppercase;
 			cursor: pointer;
@@ -132,7 +133,7 @@ Description : A single html file to manage a pallette built on the classic html 
 			transition: .22s all linear;
 		}
 		#reset:hover{
-			right: 0;
+			right: 0px;
 		}
 		#pallete_container{
 			margin-top: 20px;
@@ -187,12 +188,15 @@ Description : A single html file to manage a pallette built on the classic html 
 			color: #333;
 		}
 		a.plc > span{
+			-webkit-box-shadow: 10px 9px 17px -4px rgba(209,209,209,1);
+            -moz-box-shadow: 10px 9px 17px -4px rgba(209,209,209,1);
+            box-shadow: 10px 9px 17px -4px rgba(209,209,209,1);
 			background-color: #fff;
 			height: 50px;
 			position: absolute;
 			left: 0;
 			top: 100%;
-			color: rgb(146, 145, 151);
+			color: rgb(83, 141, 138);
 			width: 100%;
 			padding: 10px 0;
 			font-weight: 400;
@@ -223,7 +227,7 @@ Description : A single html file to manage a pallette built on the classic html 
 <header>
 <div class="header-wrap">
 	<div class="logo">
-		Palletene
+		&#127327; Palletene
 	</div>
 	<div class="new_color">
 		<form id="ncf" action="#" onsubmit="return pltts.handle_new_color( this );" >
@@ -246,7 +250,7 @@ Description : A single html file to manage a pallette built on the classic html 
 	</div>
 </div>
 
-<button id="reset">Reset</button>
+<button id="reset">&#8635; Reset</button>
 
 <script type="text/javascript">
 
