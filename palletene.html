@@ -265,6 +265,12 @@ init : function(){
 	}
 	var resetButton = document.getElementById('reset');
 	resetButton.addEventListener("click",pltts.handle_reset);
+
+	// Pre add colors
+	var pre_colors = ["#333","#4fc1e9"];
+	localStorage.pallete_main = JSON.stringify(pre_colors);
+
+
 },
 
 focus_this_color : function( c ){
